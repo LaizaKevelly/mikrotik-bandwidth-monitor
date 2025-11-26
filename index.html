@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mikrotik Bandwidth Monitor</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+</head>
+<body>
+  <h3>Mikrotik Bandwidth Monitor</h3>
+  <div>
+    Interface: <select id="interface"><option>ether1</option></select>
+  </div>
+  <div id="status">Status: Conectando...</div>
+  <div>Última leitura: <span id="lastTime">--:--:--</span></div>
+  <canvas id="chart" width="700" height="300"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
